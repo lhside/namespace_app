@@ -9,5 +9,7 @@ module Content
     def self.find_by_param(param)
       find_by(name: param)
     end
+
+    logger.info "[INFO] Content::Post loaded! #{'=' * 50}"
   end
 end

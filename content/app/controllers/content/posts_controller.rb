@@ -2,6 +2,7 @@ module Content
   class PostsController < ApplicationController
     def index
       @posts = Post.ordered
+      @log = "[INFO] #{Post.inspect}"
     end
 
     def show

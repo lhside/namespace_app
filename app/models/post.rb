@@ -5,4 +5,6 @@ class ::Post < ActiveRecord::Base
   validates_uniqueness_of :name
 
   scope :ordered, -> { order(:published_at) }
+
+  logger.info "[INFO] ::Post loaded! #{'=' * 50}"
 end

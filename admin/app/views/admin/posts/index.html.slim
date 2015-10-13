@@ -1,9 +1,13 @@
-h1 = Post.model_name.human
+h1
+  = Post.model_name.human
+  | (Admin)
+p = @log
 table
   thead
     tr
       th = Post.human_attribute_name :published_at
       th = Post.human_attribute_name :name
+      th class
       th = Post.human_attribute_name :updated_at
       th = Post.human_attribute_name :created_at
   tbody
@@ -11,5 +15,6 @@ table
       tr
         td = l post.published_at
         td = link_to post.name, post
+        td = post.class
         td = l post.updated_at
         td = l post.created_at

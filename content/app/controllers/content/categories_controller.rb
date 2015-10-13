@@ -2,6 +2,7 @@ module Content
   class CategoriesController < ApplicationController
     def index
       @categories = Category.ordered
+      @log = "[INFO] #{Category.inspect}"
     end
 
     def show
