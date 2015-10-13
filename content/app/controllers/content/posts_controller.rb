@@ -1,3 +1,4 @@
+require_dependency 'content/post'
 module Content
   class PostsController < ApplicationController
     def index
