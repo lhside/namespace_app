@@ -5,4 +5,6 @@ class ::Category < ActiveRecord::Base
   has_many :posts, dependent: :restrict_with_error
 
   scope :ordered, -> { order(:rank) }
+
+  logger.info "[INFO] ::Category loaded! #{'=' * 50}"
 end

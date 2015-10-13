@@ -1,7 +1,9 @@
+require_dependency 'admin/post'
 module Admin
   class PostsController < ApplicationController
     def index
       @posts = Post.ordered
+      @log = "[INFO] #{Post.inspect}"
     end
 
     def show

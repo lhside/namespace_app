@@ -1,9 +1,13 @@
-h1 = Category.model_name.human
+h1
+  = Category.model_name.human
+  | (Admin)
+p = @log
 table
   thead
     tr
       th = Category.human_attribute_name :rank
       th = Category.human_attribute_name :name
+      th Class
       th = Category.human_attribute_name :updated_at
       th = Category.human_attribute_name :created_at
   tbody
@@ -11,6 +15,7 @@ table
       tr
         td = category.rank
         td = link_to category.name, category
+        td = category.class
         td = l category.updated_at
         td = l category.created_at
 
