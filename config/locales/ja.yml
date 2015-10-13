@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    models:
+      category: カテゴリ
+      post: 投稿
+    attributes:
+      category:
+        name: 名前
+        rank: 並び
+        updated_at: 更新日時
+        created_at: 作成日時
+      post:
+        name: 名前
+        title: タイトル
+        body: 本文
+        category: カテゴリ
+        published_at: 公開日時
+        updated_at: 更新日時
+        created_at: 作成日時
