@@ -13,6 +13,7 @@ gem 'rails-i18n'
 
 group :development, :test do
   gem 'byebug'
+  gem 'quiet_assets'
 end
 
 group :development do
